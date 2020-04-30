@@ -11,8 +11,7 @@ RUN deluser node && \
     chmod g+s /data/foundryvtt
 USER fvtt
 
-COPY run-server.sh /opt/foundryvtt
-RUN chown fvtt:fvtt /opt/foundryvtt/run-server.sh
+COPY --chown=fvtt run-server.sh /opt/foundryvtt
 VOLUME /data/foundryvtt
 VOLUME /host
 EXPOSE 30000
