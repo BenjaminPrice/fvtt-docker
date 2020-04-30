@@ -61,6 +61,12 @@ Using the above link should grant you a $100 credit (expires in 60 days).
 
 ### Step 1 - Download the `docker-compose.yaml` file
 
+Manually download it or use the command below
+
+```shell
+wget https://raw.githubusercontent.com/BenjaminPrice/fvtt-docker/master/docker-compose.yaml
+```
+
 ### Step 2 - Download the Foundry VTT Zip File
 
 - Navigate to your User Profile page and find your Software Download Links on your license page.
