@@ -29,4 +29,4 @@ jobs:
         if: success()
         uses: actions-hub/docker@master
         with:
-          args: push ${GITHUB_REPOSITORY}:${IMAGE_TAG}
+          args: push direckthit/fvtt-docker:${IMAGE_TAG}
