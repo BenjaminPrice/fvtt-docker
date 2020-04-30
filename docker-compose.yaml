@@ -1,0 +1,11 @@
+version: '3'
+services:
+  foundryvtt:
+    image: direckthit/fvtt-docker:latest
+    container_name: fvtt
+    ports: 
+      - 30000:30000
+    volumes:
+      - /data/foundryvtt:/path/to/your/foundry/data/directory
+      - /host:/path/to/your/foundry/zip/file
+    restart: unless-stopped
