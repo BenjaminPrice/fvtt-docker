@@ -1,0 +1,5 @@
+# Ignore the zip file
+foundryvtt*.zip
+
+# IDE
+.vscode/
