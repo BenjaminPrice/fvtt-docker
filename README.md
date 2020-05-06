@@ -40,7 +40,7 @@ A couple promo codes you can try during registration (no guarantees):
 #### Digital Ocean
 Another great cheap provider with servers all around the globe.
 
-[Sign Up](https://m.do.co/c/b62612d2b7df)
+[Sign Up](https://m.do.co/c/879607663421)
 
 Using the above link should grant you a $100 credit (expires in 60 days).
 
