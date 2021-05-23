@@ -2,7 +2,7 @@ version: '3'
 services:
   foundryvtt:
     image: lichtobergo/fvtt-docker:latest
-    container_name: fvtt
+    container_name: fvtt-beta
     ports: 
       - 30000:30000
     volumes:
