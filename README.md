@@ -1,12 +1,15 @@
 # Foundry VTT - Docker
 
-<a href="https://patreon.com/direckthit"><img src="https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.herokuapp.com%2Fdireckthit&style=for-the-badge" /> </a>
+This repository hosts the Foundry VTT `Dockerfile` for [lichtobergo/fvtt-docker](https://hub.docker.com/r/lichtobergo/fvtt-docker). This is a fork from [Benjamins Price's](https://github.com/BenjaminPrice/fvtt-docker) github repo. The `Dockerfile` was changed to use Nodejs version 16 to be compatible with FoundryVTT 0.8.x.
 
-## Foundry VTT - Docker
+If you like this image please give thanks to Benjamin Price and consider supporting him via his [Patreon](https://www.patreon.com/bePatron?u=34340001&redirect_uri=https%3A%2F%2Fbenprice.dev%2Fposts%2Ffvtt-docker-tutorial%2F&utm_medium=widget).
 
-This repository hosts the Foundry VTT `Dockerfile` for [direckthit/fvtt-docker](https://hub.docker.com/r/direckthit/fvtt-docker) on Docker Hub.
+Original image at:
+[direckthit/fvtt-docker](https://hub.docker.com/r/direckthit/fvtt-docker) on Docker Hub.
 
 > [Foundry VTT](https://foundryvtt.com/) is a virtual tabletop for playing tabletop RPG games such as Dungeons & Dragons 5e.
+
+# Original readme from Benjamin Price: 
 
 I've also included a basic `docker-compose.yaml` file which you can use to get things up and running quickly.
 
