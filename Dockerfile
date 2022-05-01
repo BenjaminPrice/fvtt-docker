@@ -15,7 +15,7 @@ COPY --chown=fvtt run-server.sh /opt/foundryvtt
 RUN chmod +x /opt/foundryvtt/run-server.sh
 VOLUME /data/foundryvtt
 VOLUME /host
-VOLUME /opt/foundryvtt/app
+VOLUME /opt/foundryvtt/resources/app
 EXPOSE 30000
 
 ENTRYPOINT /opt/foundryvtt/run-server.sh
