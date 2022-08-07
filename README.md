@@ -129,7 +129,7 @@ Example:
 
 ```yaml
 - /home/player1/foundryvtt-app:/opt/foundryvtt/app
-
+```
 
 ### Step 6 - Run the server
 
