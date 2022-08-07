@@ -122,13 +122,13 @@ Example:
 #### Set your app directory (where the app and login screen resides) by modifying this line:
 
 ```yaml
-- /path/to/your/foundry/app/file:/opt/foundryvtt/app
+- /path/to/your/foundry/app/file:/opt/foundryvtt/resources/app
 ```
 
 Example:
 
 ```yaml
-- /home/player1/foundryvtt-app:/opt/foundryvtt/app
+- /home/player1/foundryvtt-app:/opt/foundryvtt/resources/app
 ```
 
 ### Step 6 - Run the server
