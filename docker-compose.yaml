@@ -8,4 +8,5 @@ services:
     volumes:
       - /path/to/your/foundry/data/directory:/data/foundryvtt
       - /path/to/your/foundry/zip/file:/host
+      - /path/to/your/foundry/app/file:/opt/foundryvtt/resources/app
     restart: unless-stopped

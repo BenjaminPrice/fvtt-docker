@@ -83,7 +83,17 @@ Either manually create the directory or use this shell command (linux/mac/WSL on
 mkdir $HOME/foundryvtt-data/
 ```
 
-### Step 4 - Modify the `docker-compose.yaml` file
+### Step 4 - Create your app directory (optional)
+
+This is where you can place your custom login screen. You only need to perform this step if you want a custom login screen on foundryVTT.
+
+Either manually create the directory or use this shell command (linux/mac/WSL only) to create the directory in your user home:
+
+```shell
+mkdir $HOME/foundryvtt-app/
+```
+
+### Step 5 - Modify the `docker-compose.yaml` file
 
 #### Set your data directory by modifying this line:
 
@@ -109,16 +119,35 @@ Example:
 - /home/player1/downloads:/host
 ```
 
-### Step 5 - Run the server
+#### Set your app directory (where the app and login screen resides) by modifying this line:
+
+```yaml
+- /path/to/your/foundry/app/file:/opt/foundryvtt/resources/app
+```
+
+Example:
+
+```yaml
+- /home/player1/foundryvtt-app:/opt/foundryvtt/resources/app
+```
+
+### Step 6 - Run the server
 
 ```shell
 docker-compose up -d
 ```
 
-### Step 6 - Access the server
+### Step 7 - Access the server
 
 Navigate to your server in your webbrowser (by IP address, is recommended)
 
 `http://127.0.0.1:30000/`
 
 Replace `127.0.0.1` with your own IP address.
+
+
+### Step 8 - Customize your login screen
+
+you can customize your login screen using a fix such as this one:
+[prettier login screen](https://github.com/TheEpicSnowWolf/Foundry-VTT-Prettier-Login-Screen)
+
