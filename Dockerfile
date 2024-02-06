@@ -17,7 +17,7 @@ RUN chmod +x /opt/foundryvtt/run-server.sh
 # Set permissions for the volumes
 USER root
 RUN chown -R fvtt:fvtt /data/foundryvtt && \
-    chown -R fvtt:fvtt /opt/foundryvtt/resources/app && \
+    chown -R fvtt:fvtt /opt/foundryvtt/resources && \
     chmod -R g+s /data/foundryvtt && \
     chmod -R g+s /opt/foundryvtt/resources/app
 
