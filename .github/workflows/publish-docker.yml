@@ -23,7 +23,7 @@ jobs:
 
       - name: Build image
         if: success()
-        run: docker build -t direckthit/fvtt-docker:${IMAGE_TAG} .
+        run: docker buildx build --platform linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64/v8,linux/ppc64le,linux/s390x -t direckthit/fvtt-docker:${IMAGE_TAG} .
 
       - name: Push to docker registry
         if: success()
