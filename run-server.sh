@@ -8,6 +8,11 @@ echo "Copying zip file..."
 find /host -type f -name '[f,F]oundry[vtt,VTT]*.zip' -exec cp '{}' . ';'
 
 echo "Unzipping..."
-unzip -o ./*.zip && rm ./*.zip
+unzip -o ./*.zip -d unpacked && rm ./*.zip
 
-node resources/app/main.js --dataPath=/data/foundryvtt
+echo "Moving to mapped directory"
+mv unpacked/* resources/app/
+
+echo "Starting node"
+cd resources/app
+node main.mjs --dataPath=/data/foundryvtt
